@@ -8,7 +8,6 @@ html {
 
 body {
     overflow-x: hidden;
-    overflow-y: hidden;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -23,9 +22,9 @@ body {
     width: 100%;
     height: 2.5vw;
     display: flex;
-    align-items: center;        
-    gap: 1.5vw;                 
-    padding: 0 0.5vw;   
+    justify-content: space-between;  
+    align-items: center;
+    padding: 0 0.5vw;
     background-color: black;
 }
 
@@ -86,7 +85,30 @@ body {
 
 .video-background {
     width: 100%;
-    height: 100%;
-    /* height: 44.3vw; */
+    /* height: 100%; */
+    height: 44.3vw;
     background-color: black;
+}
+
+.manifest-posters {
+    width: 100%;
+    height: 100%;
+}
+
+.header-BR {
+    color: black;
+    font-weight: 700;
+    font-size: 13.8vw;
+    line-height: 0.78;
+    margin-top: 2vw;
+    margin-left: 1.7vw;
+    text-decoration: none;
+}
+.about-label-text {
+    color: black;
+    font-weight: 700;
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-left: 1.7vw;
+    text-decoration: none;
 }
