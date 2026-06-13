@@ -12,7 +12,10 @@
 
 <div id="agreement-overlay">
     <div id="agreement-modal">
-        <div id="agreement-logo">ВНИМАНИЕ</div>
+        <div id="agreement-logo">
+            <div id="agreement-logo-icon">!</div>
+            <div id="agreement-logo-text">ВНИМАНИЕ</div>
+        </div>
         <div id="agreement-body">
             <p>Настоящее Пользовательское Соглашение регулирует отношения между владельцем (далее или Администрация) с
                 одной стороны и пользователем сайта с другой. Используя сайт, Вы соглашаетесь с условиями данного
@@ -28,7 +31,6 @@
 
 <body>
     <div id="burger"></div>
-    <div class="logo"></div>
 
     <nav class="mainMenu">
         <img src="./images/BRUISElogo.png" class="mainMenu-logo">
@@ -37,8 +39,8 @@
         <a href="shop.html">МАГАЗИН</a>
         <a href="map.html">КАРТА</a>
         <a href="join.html">ПРИСОЕДИНИТЬСЯ</a>
-        <!-- <a href="join.html">КОРЗИНА</a>
-        <a href="join.html">ENG/РУ</a> -->
+        <a href="cart.html">КОРЗИНА</a>
+        <!-- <a href="join.html">ENG/РУ</a>  -->
     </nav>
 
     <div class="running-line">
@@ -78,7 +80,7 @@
         <div class="footer-demo-inner">
 
             <div class="footer-col footer-col--image">
-                <img src="./images/character.png" >
+                <img src="./images/pixil-frame-0 1.svg">
             </div>
 
             <div class="footer-col">
@@ -86,12 +88,11 @@
                 <p>Bruise Records принимает отобранные аудиоматериалы для рассмотрения. Пожалуйста, пришлите краткое
                     описание исполнителя, 2–4 приватные ссылки, местоположение, контактную информацию и статус релиза.
                 </p>
-                <a href="mailto:demo@bruiserecords.com">demo@bruiserecords.com</a>
             </div>
 
             <div class="footer-col">
                 <h4>КОНТАКТЫ</h4>
-                <p>demo@bruiserecords.com</p>
+                <a href="mailto:demo@bruiserecords.com">demo@bruiserecords.com</a>
             </div>
 
             <div class="footer-col">
@@ -104,11 +105,11 @@
                 <p>дизайн: м. мироничева</p>
             </div>
 
-        </div>
+            <div class="footer-col footer-col--countdown">
+                <div class="countdown-label">СЛЕДУЮЩИЙ РЕЛИЗ:</div>
+                <div class="countdown-timer" id="countdown">12D 04H 33M 09S</div>
+            </div>
 
-        <div class="footer-countdown">
-            <div class="countdown-label">СЛЕДУЮЩИЙ РЕЛИЗ:</div>
-            <div class="countdown-timer" id="countdown">12D 04H 33M 09S</div>
         </div>
     </div>
     <div class="footer">

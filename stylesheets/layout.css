@@ -6,41 +6,69 @@ html {
     height: 100%;
 }
 
-#agreement-overlay {
-    position: absolute; 
-    top: 3.5vw;
-    left: 0;
-    z-index: 9999;
-    pointer-events: none;
+* {
+    box-sizing: border-box;
 }
 
-#agreement-modal {
+html {
+    height: 100%;
+}
+
+#agreement-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    pointer-events: all;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+#agreement-modal { 
     pointer-events: all;
     background-color: #c8c8c8;
-    width: 44vw;
-    max-width: 640px;
+    width: 41.5vw;
+    border: 3px solid white;
 }
 
 #agreement-logo {
-    background-color: #c8c8c8;
-    color: black;
+    background-color: black;
+    display: flex;
+    align-items: stretch;
+    border-bottom: 3px solid black;
+}
+
+#agreement-logo-icon {
+    color: white;
+    font-weight: 700;
+    font-size: 4vw;
+    padding: 1vw 1.5vw;
+    border-right: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#agreement-logo-text {
+    color: white;
     font-weight: 700;
     font-size: 4vw;
     line-height: 1;
-    padding: 1.5vw 2vw;
-    text-align: center;
-    border-bottom: 3px solid black;
+    padding: 1vw 2vw;
+    display: flex;
+    align-items: center;
 }
 
 #agreement-body {
     color: black;
+    background-color: #c8c8c8;
     font-size: 0.95vw;
     line-height: 1.7;
     padding: 1.5vw 2vw;
-}
-
-#agreement-body p {
-    margin: 0 0 1em;
+    border-bottom: 3px solid black;
 }
 
 #agreement-footer {
@@ -49,20 +77,13 @@ html {
 
 #agreement-decline {
     flex: 1;
-    background: #c8c8c8;
-    border: none;
-    padding: 1.5vw;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 1vw;
-    color: black;
-    cursor: default;
+    background: black;
 }
 
 #agreement-btn {
     flex: 1;
     background: #FF0000;
-    color: black;
+    color: white;
     border: none;
     padding: 1.5vw;
     font-family: inherit;
@@ -156,7 +177,7 @@ body {
 
 .video-background {
     width: 100%;
-    /* height: 100%; */
+   
     height: 47.3vw;
     background-color: black;
 }
@@ -289,4 +310,224 @@ body {
     align-items: center;
     padding: 0 1.7vw;
     gap: 3vw;
+}
+
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Root UI', Inter, Roboto, -apple-system, sans-serif;
+}
+
+.mainMenu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2.5vw;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    padding: 0 0.5vw;
+    background-color: black;
+}
+
+.mainMenu nav {
+    display: flex;
+    gap: 1vw;
+}
+
+.mainMenu-logo {
+    height: 1vw;
+    width: auto;
+}
+
+.mainMenu a {
+    color: white;
+    font-weight: 500;
+    font-size: 1vw;
+    text-decoration: none;
+    transition: color ease 0.4s;
+}
+
+.mainMenu a.active,
+.mainMenu a.active:hover {
+    color: #FF0000;
+}
+
+.mainMenu a:hover {
+    text-decoration: underline;
+}
+
+.running-line {
+    width: 100%;
+    height: 1vw;
+    margin-top: 2.5vw;
+    background: #FF0000;
+    font-weight: bold;
+    font-size: 0.8vw;
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.running-text {
+    display: inline-block;
+    animation: scrollText 20s linear infinite;
+    padding-left: 0; 
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.video-background {
+    width: 100%;
+   
+    height: 47.3vw;
+    background-color: black;
+}
+
+.manifest-posters {
+    width: 100%;
+    height: 47.3vw;
+}
+
+.header-BR {
+    color: black;
+    font-weight: 700;
+    font-size: 13.8vw;
+    line-height: 0.78;
+    margin-top: 2vw;
+    margin-left: 1.7vw;
+    text-decoration: none;
+}
+.about-label-text {
+    color: black;
+    font-weight: 700;
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-left: 1.7vw;
+    text-decoration: none;
+}
+
+.running-line2 {
+    width: 100%;
+    height: 6.3vw;
+    margin-top: 2.5vw;
+    background: black;
+    font-weight: bold;
+    font-size: 3.3vw;
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.running-text2 {
+    display: inline-block;
+    padding-top: 1.2vw;
+    animation: scrollText 60s linear infinite;
+    padding-left: 0; 
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.footer-demo {
+    width: 100%;
+    height: 13vw;
+    background: white;
+    position: relative;
+    border-top: 2px solid black;
+}
+
+.footer-demo-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 5vw;
+    padding: 1.5vw;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col--image {
+    flex: 0 0 auto;
+}
+
+.footer-col--image img {
+    height: 11vw;
+    width: auto;
+    display: block;
+    image-rendering: pixelated;
+}
+
+.footer-col h4 {
+    font-size: 0.85vw;
+    font-weight: 700;
+    margin: 0 0 0.8vw;
+}
+
+.footer-col p,
+.footer-col a {
+    font-size: 0.8vw;
+    line-height: 1.6;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.footer-col--countdown {
+    flex: 2;
+    text-align: right;
+}
+
+.countdown-label {
+    font-size: 1.2vw;
+    font-weight: 700;
+    color: #FF0000;
+    margin-bottom: 0.3vw;
+}
+
+.countdown-timer {
+    font-size: 2.6vw;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.footer {
+    width: 100%;
+    height: 3.6vw;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 1vw;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 0 1.7vw;
+    gap: 3vw;
+}
+
+.map-background {
+    height: 43vw;
+    width: 100%;
 }
