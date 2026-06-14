@@ -27,7 +27,7 @@ html {
     justify-content: flex-start;
 }
 
-#agreement-modal { 
+#agreement-modal {
     pointer-events: all;
     background-color: #c8c8c8;
     width: 41.5vw;
@@ -114,7 +114,7 @@ body {
     width: 100%;
     height: 2.5vw;
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
     align-items: center;
     padding: 0 0.5vw;
     background-color: black;
@@ -163,13 +163,14 @@ body {
 .running-text {
     display: inline-block;
     animation: scrollText 20s linear infinite;
-    padding-left: 0; 
+    padding-left: 0;
 }
 
 @keyframes scrollText {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -177,7 +178,7 @@ body {
 
 .video-background {
     width: 100%;
-   
+
     height: 47.3vw;
     background-color: black;
 }
@@ -196,6 +197,7 @@ body {
     margin-left: 1.7vw;
     text-decoration: none;
 }
+
 .about-label-text {
     color: black;
     font-weight: 700;
@@ -222,13 +224,14 @@ body {
     display: inline-block;
     padding-top: 1.2vw;
     animation: scrollText 60s linear infinite;
-    padding-left: 0; 
+    padding-left: 0;
 }
 
 @keyframes scrollText {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -306,7 +309,7 @@ body {
     font-weight: 500;
     font-size: 1vw;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     padding: 0 1.7vw;
     gap: 3vw;
@@ -329,7 +332,7 @@ body {
     width: 100%;
     height: 2.5vw;
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
     align-items: center;
     padding: 0 0.5vw;
     background-color: black;
@@ -378,13 +381,14 @@ body {
 .running-text {
     display: inline-block;
     animation: scrollText 20s linear infinite;
-    padding-left: 0; 
+    padding-left: 0;
 }
 
 @keyframes scrollText {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -392,7 +396,7 @@ body {
 
 .video-background {
     width: 100%;
-   
+
     height: 47.3vw;
     background-color: black;
 }
@@ -403,6 +407,7 @@ body {
 }
 
 .header-BR {
+    position: relative;
     color: black;
     font-weight: 700;
     font-size: 13.8vw;
@@ -411,6 +416,15 @@ body {
     margin-left: 1.7vw;
     text-decoration: none;
 }
+
+.rights-icon {
+    position: absolute;
+    top: 4vw;
+    right: 30vw;
+    height: 6vw;
+    width: 6vw;
+}
+
 .about-label-text {
     color: black;
     font-weight: 700;
@@ -419,6 +433,55 @@ body {
     margin-left: 1.7vw;
     text-decoration: none;
 }
+
+.manifest-posters {
+    position: relative; /* <-- critical fix: gives poster-stack a positioning context */
+    width: 100%;
+    height: 47.3vw;
+}
+
+.poster-stack {
+    position: absolute;
+    top: 2vw;
+    right: 6vw;
+    width: 24vw;
+    height: 34vw;
+    pointer-events: none;
+    z-index: 5; /* add this if posters appear behind the title */
+}
+
+.poster {
+    position: absolute;
+    width: 24vw;
+    height: 34vw;
+    background: #ddd;
+    box-shadow: 0 1vw 3vw rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transform: translateY(6vw) scale(0.92) rotate(0deg);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.poster.active {
+    opacity: 1;
+    transform: translate(var(--x), var(--y)) rotate(var(--rot));
+}
+
+/* Final stacked positions — small, varied offsets so the stack reads as a pile */
+.poster-1 { --x: 0vw;    --y: 0vw;   --rot: -4deg; z-index: 1; }
+.poster-2 { --x: 1.2vw;  --y: 0.8vw; --rot: 3deg;  z-index: 2; }
+.poster-3 { --x: 2.4vw;  --y: -0.6vw; --rot: -2deg; z-index: 3; }
+.poster-4 { --x: 3.6vw;  --y: 1vw;   --rot: 4deg;  z-index: 4; }
+.poster-5 { --x: 4.8vw;  --y: -0.4vw; --rot: -3deg; z-index: 5; }
+.poster-6 { --x: 6vw;    --y: 1.2vw; --rot: 2deg;  z-index: 6; }
+.poster-7 { --x: 7.2vw;  --y: -0.8vw; --rot: -5deg; z-index: 7; }
+.poster-8 { --x: 8.4vw;  --y: 0.6vw; --rot: 5deg;  z-index: 8; }
 
 .running-line2 {
     width: 100%;
@@ -437,13 +500,14 @@ body {
     display: inline-block;
     padding-top: 1.2vw;
     animation: scrollText 60s linear infinite;
-    padding-left: 0; 
+    padding-left: 0;
 }
 
 @keyframes scrollText {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -493,6 +557,7 @@ body {
     text-decoration: none;
     display: block;
 }
+
 .footer-col--countdown {
     flex: 2;
     text-align: right;
@@ -521,10 +586,112 @@ body {
     font-weight: 500;
     font-size: 1vw;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     align-items: center;
     padding: 0 1.7vw;
     gap: 3vw;
+}
+
+.soundwave {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.4vw;
+    height: 1.8vw;
+    margin-left: auto;
+}
+
+.soundwave span {
+    display: block;
+    width: 0.5vw;
+    min-height: 0.2vw;
+    background: white;
+    border-radius: 0.1vw;
+    animation: soundwave-grow 1s linear infinite;
+}
+
+.soundwave span:nth-child(1) {
+    --peak: 40%;
+    animation-delay: -0.1s;
+}
+
+.soundwave span:nth-child(2) {
+    --peak: 70%;
+    animation-delay: -0.9s;
+}
+
+.soundwave span:nth-child(3) {
+    --peak: 30%;
+    animation-delay: -0.4s;
+}
+
+.soundwave span:nth-child(4) {
+    --peak: 90%;
+    animation-delay: -0.6s;
+}
+
+.soundwave span:nth-child(5) {
+    --peak: 100%;
+    animation-delay: -0.2s;
+}
+
+.soundwave span:nth-child(6) {
+    --peak: 60%;
+    animation-delay: -1.1s;
+}
+
+.soundwave span:nth-child(7) {
+    --peak: 80%;
+    animation-delay: -0.3s;
+}
+
+.soundwave span:nth-child(8) {
+    --peak: 50%;
+    animation-delay: -0.8s;
+}
+
+.soundwave span:nth-child(9) {
+    --peak: 75%;
+    animation-delay: -0.5s;
+}
+
+.soundwave span:nth-child(10) {
+    --peak: 35%;
+    animation-delay: -0.7s;
+}
+
+.soundwave span:nth-child(11) {
+    --peak: 80%;
+    animation-delay: -0.3s;
+}
+
+.soundwave span:nth-child(12) {
+    --peak: 50%;
+    animation-delay: -0.8s;
+}
+
+.soundwave span:nth-child(13) {
+    --peak: 75%;
+    animation-delay: -0.5s;
+}
+
+.soundwave span:nth-child(14) {
+    --peak: 35%;
+    animation-delay: -0.7s;
+}
+
+
+@keyframes soundwave-grow {
+    0% {
+        height: 10%;
+    }
+
+    80% {
+        height: var(--peak);
+    }
+
+    100% {
+        height: 10%;
+    }
 }
 
 .map-background {

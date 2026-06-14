@@ -31,3 +31,37 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
+// --- Poster stack reveal on scroll ---
+(function () {
+    const section = document.querySelector('.manifest-posters');
+    const posters = document.querySelectorAll('.poster');
+    const total = posters.length;
+
+    if (!section || total === 0) return;
+
+    function update() {
+        const rect = section.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+
+        // Total range the section spends "in view": from entering at the
+        // bottom (rect.top = viewportHeight) to exiting at the top
+        // (rect.top = -rect.height).
+        const range = viewportHeight + rect.height;
+
+        // progress = 0 when section just enters from below,
+        // progress = 1 when section has fully scrolled past above.
+        let progress = (viewportHeight - rect.top) / range;
+        progress = Math.min(Math.max(progress, 0), 1);
+
+        const activeCount = Math.round(progress * total);
+
+        posters.forEach((poster, i) => {
+            poster.classList.toggle('active', i < activeCount);
+        });
+    }
+
+    window.addEventListener('scroll', update);
+    window.addEventListener('resize', update);
+    update();
+})();
