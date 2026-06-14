@@ -1,8 +1,10 @@
 //for every html page
 function init() {
     setTodayDate();
+    forModalWindow();
+    formatPhoneInput();
 }
-window.onload = init;
+document.addEventListener('DOMContentLoaded', init);
 
 function formatPhoneInput() {
     let phoneInput = document.querySelector('input[name="phone"]')

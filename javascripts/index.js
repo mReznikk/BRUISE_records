@@ -15,7 +15,7 @@ function showAgreement() {
 
 };
 
-window.onload = showAgreement;
+document.addEventListener('DOMContentLoaded', showAgreement);
 
 function updateCountdown() {
     const target = new Date('2026-07-01T00:00:00'); // change to your release date
