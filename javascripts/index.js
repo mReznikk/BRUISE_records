@@ -2,19 +2,17 @@ function showAgreement() {
     const agreement = localStorage.getItem('agreement');
     const overlay = document.getElementById('agreement-overlay');
     const btn = document.getElementById('agreement-btn');
-    if (agreement == 1) {
-        overlay.style.display = 'none';
-        document.body.style.overflow = '';
-        return;
-    }
-
-    document.body.style.overflow = 'hidden';
-
     btn.addEventListener('click', function () {
         overlay.style.display = 'none';
         document.body.style.overflow = '';
         localStorage.setItem('agreement', 1);
     });
+    if (agreement == 0 || !agreement) {
+        overlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        return;
+    }
+
 };
 
 window.onload = showAgreement;
