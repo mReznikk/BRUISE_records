@@ -1,14 +1,23 @@
-(function () {
+function showAgreement() {
+    const agreement = localStorage.getItem('agreement');
     const overlay = document.getElementById('agreement-overlay');
     const btn = document.getElementById('agreement-btn');
+    if (agreement == 1) {
+        overlay.style.display = 'none';
+        document.body.style.overflow = '';
+        return;
+    }
 
     document.body.style.overflow = 'hidden';
 
     btn.addEventListener('click', function () {
         overlay.style.display = 'none';
         document.body.style.overflow = '';
+        localStorage.setItem('agreement', 1);
     });
-})();
+};
+
+window.onload = showAgreement;
 
 function updateCountdown() {
     const target = new Date('2026-07-01T00:00:00'); // change to your release date
@@ -26,7 +35,7 @@ function updateCountdown() {
     const s = Math.floor((diff / 1000) % 60);
 
     document.getElementById('countdown').textContent =
-        `${d}D ${String(h).padStart(2,'0')}H ${String(m).padStart(2,'0')}M ${String(s).padStart(2,'0')}S`;
+        `${d}D ${String(h).padStart(2, '0')}H ${String(m).padStart(2, '0')}M ${String(s).padStart(2, '0')}S`;
 }
 
 setInterval(updateCountdown, 1000);

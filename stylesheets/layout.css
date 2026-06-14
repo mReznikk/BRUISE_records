@@ -14,6 +14,8 @@ html {
     height: 100%;
 }
 
+/* agreement window */
+
 #agreement-overlay {
     position: fixed;
     bottom: 0;
@@ -97,6 +99,8 @@ html {
 #agreement-btn:hover {
     background: #cc0000;
 }
+
+/* main page */
 
 body {
     overflow-x: hidden;
@@ -435,7 +439,8 @@ body {
 }
 
 .manifest-posters {
-    position: relative; /* <-- critical fix: gives poster-stack a positioning context */
+    position: relative;
+    /* <-- critical fix: gives poster-stack a positioning context */
     width: 100%;
     height: 47.3vw;
 }
@@ -447,7 +452,8 @@ body {
     width: 24vw;
     height: 34vw;
     pointer-events: none;
-    z-index: 5; /* add this if posters appear behind the title */
+    z-index: 5;
+    /* add this if posters appear behind the title */
 }
 
 .poster {
@@ -474,14 +480,61 @@ body {
 }
 
 /* Final stacked positions — small, varied offsets so the stack reads as a pile */
-.poster-1 { --x: 0vw;    --y: 0vw;   --rot: -4deg; z-index: 1; }
-.poster-2 { --x: 1.2vw;  --y: 0.8vw; --rot: 3deg;  z-index: 2; }
-.poster-3 { --x: 2.4vw;  --y: -0.6vw; --rot: -2deg; z-index: 3; }
-.poster-4 { --x: 3.6vw;  --y: 1vw;   --rot: 4deg;  z-index: 4; }
-.poster-5 { --x: 4.8vw;  --y: -0.4vw; --rot: -3deg; z-index: 5; }
-.poster-6 { --x: 6vw;    --y: 1.2vw; --rot: 2deg;  z-index: 6; }
-.poster-7 { --x: 7.2vw;  --y: -0.8vw; --rot: -5deg; z-index: 7; }
-.poster-8 { --x: 8.4vw;  --y: 0.6vw; --rot: 5deg;  z-index: 8; }
+.poster-1 {
+    --x: 0vw;
+    --y: 0vw;
+    --rot: -4deg;
+    z-index: 1;
+}
+
+.poster-2 {
+    --x: 1.2vw;
+    --y: 0.8vw;
+    --rot: 3deg;
+    z-index: 2;
+}
+
+.poster-3 {
+    --x: 2.4vw;
+    --y: -0.6vw;
+    --rot: -2deg;
+    z-index: 3;
+}
+
+.poster-4 {
+    --x: 3.6vw;
+    --y: 1vw;
+    --rot: 4deg;
+    z-index: 4;
+}
+
+.poster-5 {
+    --x: 4.8vw;
+    --y: -0.4vw;
+    --rot: -3deg;
+    z-index: 5;
+}
+
+.poster-6 {
+    --x: 6vw;
+    --y: 1.2vw;
+    --rot: 2deg;
+    z-index: 6;
+}
+
+.poster-7 {
+    --x: 7.2vw;
+    --y: -0.8vw;
+    --rot: -5deg;
+    z-index: 7;
+}
+
+.poster-8 {
+    --x: 8.4vw;
+    --y: 0.6vw;
+    --rot: 5deg;
+    z-index: 8;
+}
 
 .running-line2 {
     width: 100%;
@@ -694,7 +747,202 @@ body {
     }
 }
 
+/* editorial */
+
+/* shop page */
+
+/* map page  */
+
 .map-background {
     height: 43vw;
     width: 100%;
 }
+
+/* form page */
+
+.form {
+    position: relative;
+    width: 60vw;
+    background-color: black;
+    border: 0.2vw solid white;
+    margin: 2vw auto;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+/* date box - pinned to top right corner */
+.date-field {
+    position: absolute;
+    top: -0.2vw;
+    right: -0.2vw;
+    background-color: white;
+}
+
+.date-field input {
+    background-color: white;
+    color: black;
+    border: none;
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    font-size: 1.1vw;
+    padding: 0.6vw 1vw;
+    text-align: right;
+}
+
+/* text inputs */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.placeholder {
+    position: relative;
+    width: 100%;
+    background-color: white;
+    border-bottom: 0.15vw solid black;
+}
+
+.placeholder input {
+    width: 100%;
+    height: 3.5vw;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6vw;
+    padding: 0 2vw;
+    color: black;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+.placeholder input:focus {
+    outline: none;
+}
+
+.placeholder::before {
+    position: absolute;
+    top: 50%;
+    left: 2vw;
+    transform: translateY(-50%);
+    color: #777;
+    font-weight: 400;
+    font-size: 1.6vw;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.date-field {
+    width: 14vw;
+    height: 3.5vw;
+    margin-left: 41.5vw;
+}
+
+.date-field input {
+    width: auto;
+    height: 1.8vw;
+    font-size: 0.9vw;
+    padding: 0.3vw 0.8vw;
+}
+
+.placeholder:has(input[name='userName'])::before {
+    content: '//ИМЯ ПОЛЬЗОВАТЕЛЯ';
+}
+
+.placeholder:has(input[name='email'])::before {
+    content: '//ЭЛЕКТРОННАЯ ПОЧТА';
+}
+
+.placeholder:has(input[name='phone'])::before {
+    content: '//НОМЕР ТЕЛЕФОНА';
+}
+
+.placeholder:has(input:focus)::before,
+.placeholder:has(input:not(:placeholder-shown))::before {
+    opacity: 0;
+}
+
+/* checkboxes */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8vw;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    gap: 0.8vw;
+}
+
+.form label {
+    color: white;
+    font-size: 1vw;
+}
+
+.form input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.2vw;
+    height: 1.2vw;
+    min-width: 1.2vw;
+    border: 0.12vw solid white;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+}
+
+.form input[type="checkbox"]:checked {
+    background-color: red;
+    border-color: red;
+}
+
+.form input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    left: 0.35vw;
+    top: 0.1vw;
+    width: 0.3vw;
+    height: 0.6vw;
+    border: solid black;
+    border-width: 0 0.15vw 0.15vw 0;
+    transform: rotate(45deg);
+}
+
+/* bottom row: barcode/label on left, submit on right */
+.form-bottom {
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.form-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.barcode img,
+.censored-label img {
+    height: 4vw;
+    width: auto;
+}
+
+.form button {
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 1.6vw;
+    font-weight: 700;
+    padding: 1.2vw 3vw;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.form button:hover {
+    background-color: #cc0000;
+}
+
+/* cart */

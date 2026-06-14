@@ -33,6 +33,44 @@
             ТУР ПО ЕВРОПЕ — ДАТЫ, МЕСТА ПРОВЕДЕНИЯ И ИНФОРМАЦИЯ БУДУТ ОБЪЯВЛЕНЫ ПОЗЖЕ
         </div>
     </div>
+
+    <form action="" class="form">
+        <span class="placeholder date-field">
+            <input type="text" name="date" value="" readonly />
+        </span>
+
+        <div class="input-group">
+            <span class="placeholder">
+                <input type="text" name="userName" value="" placeholder=" " />
+            </span>
+            <span class="placeholder">
+                <input type="email" name="email" value="" placeholder=" " />
+            </span>
+            <span class="placeholder">
+                <input type="tel" name="phone" value="" placeholder=" " />
+            </span>
+        </div>
+
+        <div class="checkbox-group">
+            <div class="checkbox-row">
+                <input type="checkbox" id="accept1" name="accept1" value="agreement">
+                <label for="accept1">Принять пользовательское соглашение</label>
+            </div>
+            <div class="checkbox-row">
+                <input type="checkbox" id="accept2" name="accept2" value="emali-news">
+                <label for="accept2">Получать электронную новостную рассылку</label>
+            </div>
+        </div>
+
+        <div class="form-bottom">
+            <div class="form-bottom-left">
+                <div class="barcode"><img src="./images/barcode.png" alt="barcode"></div>
+                <div class="censored-label"><img src="./images/censoredlabel.jpg" alt="parental advisory"></div>
+            </div>
+            <button type="submit">ОТПРАВИТЬ</button>
+        </div>
+    </form>
+
 </body>
 
 </html>
