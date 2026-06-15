@@ -751,6 +751,168 @@ body {
 
 /* shop page */
 
+.header-shop {
+    width: 100%;
+    height: 7vw;
+    border-bottom: 2px solid black;
+}
+
+.header-shop img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin-left: 1.7vw;
+    margin-top: 1.5vw;
+}
+
+.merch-banner {
+    width: 100%;
+    height: 30vw;
+    overflow: hidden;
+    background: black;
+}
+
+.merch-track {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: merchSlide 16s ease-in-out infinite;
+}
+
+.merch-slide {
+    width: 25%;
+    height: 100%;
+    flex-shrink: 0;
+    background-color: #111;
+}
+
+.merch-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes merchSlide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    20% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    45% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    70% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-75%);
+    }
+
+    95% {
+        transform: translateX(-75%);
+    }
+
+    100% {
+        transform: translateX(-75%);
+    }
+}
+
+/* shop section headers */
+
+.section-header {
+    width: 100%;
+    padding: 0 1.7vw;
+    margin: 1.7vw 0;
+    background: white;
+    box-sizing: border-box;
+}
+
+.section-header h2 {
+    color: black;
+    font-weight: 700;
+    font-size: 3.3vw;
+    margin: 0;
+}
+
+/* product list */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1.7vw 1.7vw;
+    background: white;
+}
+
+.product-card {
+    border: 1px solid black;
+    margin-left: -1px;
+    padding: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8vw;
+    text-align: center;
+    flex: 1 1 20vw;
+}
+
+.product-photo {
+    width: 100%;
+    max-width: 20vw;
+    background-color: black;
+    margin: 0.5vw 0 1vw;
+    overflow: hidden;
+}
+
+.product-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-name,
+.product-price {
+    width: 100%;
+    max-width: 16vw;
+    font-size: 1vw;
+    font-weight: 700;
+    color: black;
+    margin: 0;
+}
+
+.product-buy {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 0.9vw;
+    padding: 0.5vw 1.5vw;
+    width: fit-content;
+    margin-top: 0.5vw;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.product-buy:hover {
+    background: black;
+    color: white;
+}
+
 /* map page  */
 
 .map-background {
@@ -839,10 +1001,10 @@ body {
 }
 
 .date-field input {
-    width: auto;
-    height: 1.8vw;
-    font-size: 0.9vw;
-    padding: 0.3vw 0.8vw;
+    width: 14vw;
+    height: 2.8vw;
+    font-size: 1.9vw;
+    padding: 1.3vw 0.8vw;
 }
 
 .placeholder:has(input[name='userName'])::before {
@@ -910,7 +1072,6 @@ body {
     transform: rotate(45deg);
 }
 
-/* bottom row: barcode/label on left, submit on right */
 .form-bottom {
     margin-top: 4vw;
     display: flex;
