@@ -27,6 +27,7 @@ html {
     display: none;
     align-items: flex-end;
     justify-content: flex-start;
+    padding: 2vw;
 }
 
 #agreement-modal {
@@ -112,7 +113,7 @@ body {
 }
 
 .mainMenu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -207,7 +208,7 @@ body {
     font-weight: 700;
     font-size: 2vw;
     margin-top: 2vw;
-    margin-left: 1.7vw;
+    margin-left: 10.7vw;
     text-decoration: none;
 }
 
@@ -749,19 +750,64 @@ body {
 
 /* editorial */
 
+.header-editorial {
+    width: 100%;
+    height: 7vw;
+    margin-left: 1.7vw;
+    margin-top: 1.5vw;
+}
+
+.news {
+    font-size: 0;
+}
+
+.news-card {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 400px;
+    vertical-align: top;
+    overflow: hidden;
+    background-image: url("C:\Users\Mary\OneDrive\Documents\projects\BRUISE_records\images\photoexample.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.news-card.second {
+    background-image: url(/images/photoexample.jpg);
+}
+
+.news-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 8px;
+    background: red;
+    color: white;
+    font: 22px Arial;
+
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.news-card:hover .news-text {
+    opacity: 1;
+}
+
 /* shop page */
 
 .header-shop {
     width: 100%;
     height: 7vw;
-    border-bottom: 2px solid black;
 }
 
 .header-shop img {
     width: auto;
     height: auto;
     max-width: 100%;
-    margin-left: 1.7vw;
+    margin-left: 1.6vw;
     margin-top: 1.5vw;
 }
 
@@ -907,6 +953,8 @@ body {
     cursor: pointer;
     transition: background 0.2s ease, color 0.2s ease;
 }
+
+
 
 .product-buy:hover {
     background: black;
