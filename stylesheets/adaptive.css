@@ -41,6 +41,71 @@
     .running-line {
         margin-top: 56px;
     }
+
+    .video-background {
+        height: 100vh;
+    }
+
+    .manifest-posters {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .poster-stack {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
+    .artist-item {
+        font-size: 4vw;
+    }
+
+    .form {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+
+    .input-group,
+    .checkbox-group,
+    .form-bottom {
+        width: 60vw;
+    }
+
+    .page-header {
+        height: auto;
+    }
+
+    .product-list {
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .product-card {
+        flex: 0 1 240px;
+        margin-left: 0;
+    }
+
+    .product-photo {
+        max-width: none;
+    }
+
+    .product-name,
+    .product-price {
+        max-width: none;
+        font-size: 2.2vw;
+    }
+
+    .product-buy {
+        font-size: 2vw;
+    }
+
+    .section-header {
+        text-align: center;
+    }
 }
 
 @media (max-width: 600px) {
@@ -50,5 +115,18 @@
 
     .mainMenu-cart-link {
         font-size: 14px;
+    }
+
+    .product-name,
+    .product-price {
+        font-size: 4vw;
+    }
+
+    .product-buy {
+        font-size: 3.5vw;
+    }
+
+    .section-header h2 {
+        font-size: 6vw;
     }
 }

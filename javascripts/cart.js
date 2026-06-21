@@ -25,7 +25,6 @@
         localStorage.setItem('cart', JSON.stringify(Array.from(cart.values())));
     }
 
-    function openCart() { panel.classList.add('open'); }
     function closeCart() { panel.classList.remove('open'); }
 
     function updateCount(total) {
@@ -129,7 +128,7 @@
     });
 
     let cartLink = document.querySelector('.mainMenu-cart-link');
-    if (cartLink) cartLink.addEventListener('click', function (e) { e.preventDefault(); openCart(); });
+    if (cartLink) cartLink.addEventListener('click', function (e) { e.preventDefault(); panel.classList.toggle('open'); });
 
     let closeBtn = panel.querySelector('.cart-panel__close');
     if (closeBtn) closeBtn.addEventListener('click', closeCart);

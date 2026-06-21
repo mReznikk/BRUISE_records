@@ -610,7 +610,8 @@
     opacity: 0;
 }
 
-.editorial-image:hover .editorial-caption {
+.editorial-image:hover .editorial-caption,
+.editorial-image.show .editorial-caption {
     opacity: 1;
 }
 

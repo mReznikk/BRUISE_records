@@ -117,3 +117,45 @@
   background: black;
   color: white;
 }
+
+@media (max-width: 1024px) {
+  .cart-panel {
+    top: 56px;
+    height: calc(100% - 56px);
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .cart-panel__close {
+    padding-top: 0;
+    font-size: 36px;
+  }
+
+  .cart-panel__title {
+    font-size: 20px;
+  }
+
+  .cart-item {
+    gap: 8px;
+    font-size: 16px;
+  }
+
+  .qty-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 20px;
+  }
+
+  .qty-num {
+    min-width: 28px;
+  }
+
+  #cart-checkout {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .added-label {
+    font-size: 14px;
+  }
+}

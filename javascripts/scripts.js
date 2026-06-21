@@ -4,6 +4,7 @@ function init() {
     forModalWindow();
     formatPhoneInput();
     burgerMenu();
+    editorialTouch();
 }
 document.addEventListener('DOMContentLoaded', init);
 
@@ -80,4 +81,11 @@ function burgerMenu() {
     let links = document.querySelector('.mainMenu-links')
     if (!logo || !links) return
     logo.addEventListener('click', () => links.classList.toggle('open'))
+}
+
+function editorialTouch() {
+    let images = document.querySelectorAll('.editorial-image')
+    images.forEach((image) => {
+        image.addEventListener('click', () => image.classList.toggle('show'))
+    })
 }
