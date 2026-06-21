@@ -5,6 +5,7 @@ function init() {
     formatPhoneInput();
     burgerMenu();
     editorialTouch();
+    regionTouch();
 }
 document.addEventListener('DOMContentLoaded', init);
 
@@ -20,22 +21,22 @@ function formatPhoneInput() {
     })
 
     phoneInput.addEventListener('input', function () {
-        let numbers = this.value.replace(/\D/g, '')
-        numbers = numbers.substring(0, 10)
+        let numbers = this.value.replace(/\D/g, '').substring(0, 11)
+        let cc = numbers.slice(0, 1)
+        numbers = numbers.slice(1)
 
-        let formatted = ''
+        let formatted = cc ? '+' + cc + ' ' : ''
 
         if (numbers.length > 0) {
-            //  formatted = formatted + '('+ numbers.substring(0, 3) 
             formatted += '(' + numbers.substring(0, 3)
         }
         if (numbers.length >= 4) {
-            formatted += ') ' + numbers.substring(3, 6)
+            formatted += ')' + numbers.substring(3, 6)
         }
         if (numbers.length >= 7) {
             formatted += '-' + numbers.substring(6, 8)
         }
-         if (numbers.length >= 9) {
+        if (numbers.length >= 9) {
             formatted += '-' + numbers.substring(8, 10)
         }
 
@@ -52,7 +53,7 @@ function setTodayDate() {
         let mm = String(today.getMonth() + 1).padStart(2, '0')
         let yyyy = today.getFullYear()
 
-        dateInput.value = `${dd}/${mm}/${yyyy}`
+        dateInput.value = `${yyyy}/${mm}/${dd}`
         dateInput.readOnly = true
         dateInput.tabIndex = -1
     }
@@ -87,5 +88,16 @@ function editorialTouch() {
     let images = document.querySelectorAll('.editorial-image')
     images.forEach((image) => {
         image.addEventListener('click', () => image.classList.toggle('show'))
+    })
+}
+
+function regionTouch() {
+    let regions = document.querySelectorAll('.region')
+    regions.forEach((region) => {
+        region.addEventListener('click', () => {
+            let open = region.classList.contains('show')
+            regions.forEach((r) => r.classList.remove('show'))
+            if (!open) region.classList.add('show')
+        })
     })
 }

@@ -1,4 +1,8 @@
 @media (max-width: 1024px) {
+    body:has(.form) {
+        background-color: black;
+    }
+
     .mainMenu {
         height: 56px;
         padding: 0 16px;
@@ -65,14 +69,28 @@
 
     .form {
         width: 100%;
+        min-height: 100vh;
         margin: 0;
         align-items: center;
     }
 
     .input-group,
     .checkbox-group,
-    .form-bottom {
+    .form-bottom,
+    .date-field {
         width: 60vw;
+    }
+
+    .date-field {
+        position: static;
+        height: auto;
+        background: transparent;
+        text-align: right;
+    }
+
+    .date-field input {
+        width: auto;
+        height: auto;
     }
 
     .page-header {
@@ -106,6 +124,18 @@
     .section-header {
         text-align: center;
     }
+
+    .map-grid {
+        display: block;
+    }
+
+    .region-popup {
+        width: 180px;
+    }
+
+    .region-popup p {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -128,5 +158,51 @@
 
     .section-header h2 {
         font-size: 6vw;
+    }
+
+    .running-line {
+        height: auto;
+        font-size: 11px;
+        padding: 3px 0;
+    }
+
+    .form {
+        padding: 20px 16px;
+    }
+
+    .input-group,
+    .checkbox-group,
+    .form-bottom,
+    .date-field {
+        width: 100%;
+    }
+
+    .placeholder input,
+    .placeholder::before,
+    .form button {
+        font-size: 16px;
+    }
+
+    .placeholder input {
+        height: 48px;
+    }
+
+    .form label {
+        font-size: 14px;
+    }
+
+    .form input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        min-width: 18px;
+    }
+
+    .form button {
+        padding: 12px 24px;
+    }
+
+    .date-field input {
+        font-size: 14px;
+        padding: 6px 8px;
     }
 }

@@ -773,9 +773,13 @@
     margin-top: 1.5vw;
 }
 
-.map-wrap {
+.map-grid {
+    display: flex;
+}
+
+.map-slice {
     position: relative;
-    width: 100%;
+    flex: 1;
 }
 
 .map-img {
@@ -785,7 +789,7 @@
 
 .region {
     position: absolute;
-    width: 5.56%;
+    width: 16.68%;
     height: 13%;
     cursor: pointer;
     border: 0.3vw solid #FF0000;
@@ -805,7 +809,13 @@
     z-index: 10;
 }
 
-.region:hover .region-popup {
+.region:hover,
+.region.show {
+    z-index: 20;
+}
+
+.region:hover .region-popup,
+.region.show .region-popup {
     display: block;
 }
 
@@ -826,7 +836,6 @@
     position: relative;
     width: 60vw;
     background-color: black;
-    border: 0.2vw solid white;
     margin: 2vw auto;
     padding: 2vw;
     display: flex;
@@ -842,14 +851,13 @@
     background-color: white;
     width: 14vw;
     height: 3.5vw;
-    margin-left: 41.5vw;
 }
 
 .date-field input {
     background-color: white;
     color: black;
     border: none;
-    font-family: 'Courier New', monospace;
+    font-family: inherit;
     font-weight: 700;
     text-align: right;
     width: 14vw;
