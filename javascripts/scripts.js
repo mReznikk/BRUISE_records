@@ -3,6 +3,7 @@ function init() {
     setTodayDate();
     forModalWindow();
     formatPhoneInput();
+    burgerMenu();
 }
 document.addEventListener('DOMContentLoaded', init);
 
@@ -72,4 +73,11 @@ function forModalWindow() {
             alert(`Спасибо, ${userName}! Данные сохранены`)
         }
     })
+}
+
+function burgerMenu() {
+    let logo = document.querySelector('.mainMenu-logo')
+    let links = document.querySelector('.mainMenu-links')
+    if (!logo || !links) return
+    logo.addEventListener('click', () => links.classList.toggle('open'))
 }

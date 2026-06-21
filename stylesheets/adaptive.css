@@ -1,0 +1,54 @@
+@media (max-width: 1024px) {
+    .mainMenu {
+        height: 56px;
+        padding: 0 16px;
+    }
+
+    .mainMenu-logo {
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .mainMenu-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+        background: black;
+    }
+
+    .mainMenu-links.open {
+        display: flex;
+    }
+
+    .mainMenu a {
+        font-size: 18px;
+        padding: 14px 16px;
+    }
+
+    .mainMenu-cart-link {
+        font-size: 16px;
+    }
+
+    .mainMenu-cart {
+        height: 16px;
+    }
+
+    .running-line {
+        margin-top: 56px;
+    }
+}
+
+@media (max-width: 600px) {
+    .mainMenu a {
+        font-size: 16px;
+    }
+
+    .mainMenu-cart-link {
+        font-size: 14px;
+    }
+}
