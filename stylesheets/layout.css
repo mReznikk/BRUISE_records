@@ -47,20 +47,16 @@ html {
 #agreement-logo-icon {
     color: white;
     font-weight: 700;
-    font-size: 4vw;
-    padding: 1vw 1.5vw;
-    border-right: 3px solid white;
+    font-size: 6vw;
+    padding: 0vw 1.5vw;
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #agreement-logo-text {
     color: white;
     font-weight: 700;
-    font-size: 4vw;
-    line-height: 1;
-    padding: 1vw 2vw;
+    font-size: 5vw;
+    padding: 1vw 4vw;
     display: flex;
     align-items: center;
 }
@@ -68,9 +64,9 @@ html {
 #agreement-body {
     color: black;
     background-color: #c8c8c8;
-    font-size: 0.95vw;
-    line-height: 1.7;
-    padding: 1.5vw 2vw;
+    font-size: 1.7vw;
+    line-height: 1.4;
+    padding: 0.5vw 1vw;
     border-bottom: 3px solid black;
 }
 
@@ -84,14 +80,13 @@ html {
 }
 
 #agreement-btn {
-    flex: 1;
+    border: none;
     background: #FF0000;
     color: white;
     border: none;
     padding: 1.5vw;
-    font-family: inherit;
     font-weight: 700;
-    font-size: 1.8vw;
+    font-size: 2.8vw;
     letter-spacing: 0.05em;
     cursor: pointer;
     transition: background 0.2s ease;
@@ -111,6 +106,7 @@ body {
     padding: 0;
     font-family: 'PT Root UI', Inter, Roboto, -apple-system, sans-serif;
 }
+
 .mainMenu {
     position: fixed;
     top: 0;
@@ -129,7 +125,7 @@ body {
     display: flex;
     align-items: center;
     gap: 2.3vw;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: 1.5vw;
 }
 
@@ -645,7 +641,7 @@ body {
 }
 
 .footer-3-col {
-        display: flex;
+    display: flex;
     justify-content: space-between;
     gap: 3vw;
 }
@@ -793,45 +789,6 @@ body {
     height: 7vw;
     margin-left: 1.7vw;
     margin-top: 1.5vw;
-}
-
-.news {
-    font-size: 0;
-}
-
-.news-card {
-    position: relative;
-    display: inline-block;
-    width: 50%;
-    height: 400px;
-    vertical-align: top;
-    overflow: hidden;
-    background-image: url("C:\Users\Mary\OneDrive\Documents\projects\BRUISE_records\images\photoexample.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.news-card.second {
-    background-image: url(/images/photoexample.jpg);
-}
-
-.news-text {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    padding: 8px;
-    background: red;
-    color: white;
-    font: 22px Arial;
-
-    opacity: 0;
-    transition: 0.2s;
-}
-
-.news-card:hover .news-text {
-    opacity: 1;
 }
 
 /* artists */
