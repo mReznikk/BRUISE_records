@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', init);
 function formatPhoneInput() {
     let phoneInput = document.querySelector('input[name="phone"]')
 
+    if (!phoneInput) return
+
     phoneInput.addEventListener('keypress', (event) => {
         if (!/[0-9]/.test(event.key)) {
             event.preventDefault()
@@ -56,6 +58,8 @@ function setTodayDate() {
 
 function forModalWindow() {
     let form = document.querySelector('form')
+
+    if (!form) return
 
     form.addEventListener('submit', (event) => {
         event.preventDefault()

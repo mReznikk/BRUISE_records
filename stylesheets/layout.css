@@ -1,20 +1,10 @@
-* {
-    box-sizing: border-box;
-}
+/* ==========================================================================
+   Layout & components
+   Base/reset lives in reset.css, @font-face in fonts.css, @keyframes in
+   animation.css. Each selector below is defined once.
+   ========================================================================== */
 
-html {
-    height: 100%;
-}
-
-/* * {
-    box-sizing: border-box;
-}
-
-html {
-    height: 100%;
-} */
-
-/* agreement window */
+/* ===== Agreement modal ===== */
 
 #agreement-overlay {
     position: fixed;
@@ -80,7 +70,6 @@ html {
 }
 
 #agreement-btn {
-    border: none;
     background: #FF0000;
     color: white;
     border: none;
@@ -96,16 +85,7 @@ html {
     background: #cc0000;
 }
 
-/* main page */
-
-body {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'PT Root UI', Inter, Roboto, -apple-system, sans-serif;
-}
+/* ===== Main menu ===== */
 
 .mainMenu {
     position: fixed;
@@ -120,6 +100,33 @@ body {
     padding: 0 1.5vw;
     background-color: black;
     gap: 1vw;
+}
+
+.mainMenu nav {
+    display: flex;
+    gap: 1vw;
+}
+
+.mainMenu-logo {
+    height: 1vw;
+    width: auto;
+}
+
+.mainMenu a {
+    color: white;
+    font-weight: 500;
+    font-size: 1vw;
+    text-decoration: none;
+    transition: color ease 0.4s;
+}
+
+.mainMenu a.active,
+.mainMenu a.active:hover {
+    color: #FF0000;
+}
+
+.mainMenu a:hover {
+    text-decoration: underline;
 }
 
 .mainMenu-links {
@@ -181,6 +188,8 @@ body {
     opacity: 0.8;
 }
 
+/* ===== Running lines (keyframes: scrollText in animation.css) ===== */
+
 .running-line {
     width: 100%;
     height: 1vw;
@@ -199,47 +208,6 @@ body {
     animation: scrollText 20s linear infinite;
     padding-left: 0;
 }
-
-@keyframes scrollText {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.video-background {
-    width: 100%;
-
-    height: 47.3vw;
-    background-color: black;
-}
-
-.manifest-posters {
-    width: 100%;
-    height: 47.3vw;
-}
-
-/* .header-BR {
-    color: black;
-    font-weight: 700;
-    font-size: 13.8vw;
-    line-height: 0.78;
-    margin-top: 2vw;
-    margin-left: 1.7vw;
-    text-decoration: none;
-} */
-/* 
-.about-label-text {
-    color: black;
-    font-weight: 700;
-    font-size: 2vw;
-    margin-top: 2vw;
-    margin-left: 10.7vw;
-    text-decoration: none;
-} */
 
 .running-line2 {
     width: 100%;
@@ -261,172 +229,7 @@ body {
     padding-left: 0;
 }
 
-@keyframes scrollText {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.footer-demo {
-    width: 100%;
-    height: 13vw;
-    background: white;
-    position: relative;
-    border-top: 2px solid black;
-}
-
-.footer-demo-inner {
-    display: flex;
-    align-items: flex-start;
-    gap: 2vw;
-    padding: 1.5vw;
-}
-
-.footer-col {
-    flex: 1;
-}
-
-.footer-col--image {
-    flex: 0 0 auto;
-}
-
-.footer-col--image img {
-    height: 11vw;
-    width: auto;
-    display: block;
-    image-rendering: pixelated;
-}
-
-.footer-col h4 {
-    font-size: 0.85vw;
-    font-weight: 700;
-    margin: 0 0 0.8vw;
-}
-
-.footer-col p,
-.footer-col a {
-    font-size: 0.8vw;
-    line-height: 1.6;
-    color: black;
-    text-decoration: none;
-    display: block;
-}
-
-.footer-countdown {
-    padding: 1vw 1.5vw;
-    border-top: 1px solid #eee;
-    text-align: center;
-}
-
-.countdown-label {
-    font-size: 2.5vw;
-    font-weight: 700;
-    color: #FF0000;
-}
-
-.countdown-timer {
-    font-size: 4vw;
-    font-weight: 700;
-    color: black;
-    letter-spacing: 0.05em;
-}
-
-.footer {
-    width: 100%;
-    height: 3.6vw;
-    background-color: black;
-    color: white;
-    font-weight: 500;
-    font-size: 1vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 1.7vw;
-    gap: 3vw;
-}
-
-
-/* body {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'PT Root UI', Inter, Roboto, -apple-system, sans-serif;
-} */
-
-/* .mainMenu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2.5vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0.5vw;
-    background-color: black;
-} */
-
-.mainMenu nav {
-    display: flex;
-    gap: 1vw;
-}
-
-.mainMenu-logo {
-    height: 1vw;
-    width: auto;
-}
-
-.mainMenu a {
-    color: white;
-    font-weight: 500;
-    font-size: 1vw;
-    text-decoration: none;
-    transition: color ease 0.4s;
-}
-
-.mainMenu a.active,
-.mainMenu a.active:hover {
-    color: #FF0000;
-}
-
-.mainMenu a:hover {
-    text-decoration: underline;
-}
-
-/* .running-line {
-    width: 100%;
-    height: 1vw;
-    margin-top: 2.5vw;
-    background: #FF0000;
-    font-weight: bold;
-    font-size: 0.8vw;
-    color: black;
-    overflow: hidden;
-    white-space: nowrap;
-    font-weight: bold;
-} */
-
-.running-text {
-    display: inline-block;
-    animation: scrollText 20s linear infinite;
-    padding-left: 0;
-}
-
-@keyframes scrollText {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
+/* ===== Homepage hero ===== */
 
 .video-background {
     width: 100%;
@@ -436,6 +239,8 @@ body {
 }
 
 .manifest-posters {
+    position: relative;
+    /* <-- critical fix: gives poster-stack a positioning context */
     width: 100%;
     height: 47.3vw;
 }
@@ -466,13 +271,6 @@ body {
     margin-top: 2vw;
     margin-left: 1.5vw;
     text-decoration: none;
-}
-
-.manifest-posters {
-    position: relative;
-    /* <-- critical fix: gives poster-stack a positioning context */
-    width: 100%;
-    height: 47.3vw;
 }
 
 .poster-stack {
@@ -566,35 +364,7 @@ body {
     z-index: 8;
 }
 
-.running-line2 {
-    width: 100%;
-    height: 6.3vw;
-    margin-top: 2.5vw;
-    background: black;
-    font-weight: bold;
-    font-size: 3.3vw;
-    color: white;
-    overflow: hidden;
-    white-space: nowrap;
-    font-weight: bold;
-}
-
-.running-text2 {
-    display: inline-block;
-    padding-top: 1.2vw;
-    animation: scrollText 60s linear infinite;
-    padding-left: 0;
-}
-
-@keyframes scrollText {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
+/* ===== Footer demo ===== */
 
 .footer-demo {
     width: 100%;
@@ -666,6 +436,8 @@ body {
     letter-spacing: 0.05em;
     white-space: nowrap;
 }
+
+/* ===== Footer + soundwave (keyframes: soundwave-grow in animation.css) ===== */
 
 .footer {
     width: 100%;
@@ -768,22 +540,7 @@ body {
     animation-delay: -0.7s;
 }
 
-
-@keyframes soundwave-grow {
-    0% {
-        height: 10%;
-    }
-
-    80% {
-        height: var(--peak);
-    }
-
-    100% {
-        height: 10%;
-    }
-}
-
-/* editorial */
+/* ===== Page headers ===== */
 
 .page-header {
     width: 100%;
@@ -798,27 +555,8 @@ body {
     margin-top: 1.5vw;
 }
 
-.header-editorial {
-    width: 100%;
-    height: 7vw;
-    margin-left: 1.7vw;
-    margin-top: 1.5vw;
-}
+/* ===== Artists ===== */
 
-/* artists */
-
-.header-artists {
-    width: 100%;
-    height: 7vw;
-}
-
-.header-artists img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    margin-left: 1.6vw;
-    margin-top: 1.5vw;
-}
 .artists-list {
     width: 100%;
     background: white;
@@ -843,20 +581,7 @@ body {
     color: #FF0000;
 }
 
-/* shop page */
-
-.header-shop {
-    width: 100%;
-    height: 4.4vw;
-}
-
-.header-shop img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    margin-left: 1.6vw;
-    margin-top: 1.5vw;
-}
+/* ===== Shop (keyframes: merchSlide in animation.css) ===== */
 
 .merch-banner {
     width: 100%;
@@ -884,44 +609,6 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-@keyframes merchSlide {
-    0% {
-        transform: translateX(0%);
-    }
-
-    20% {
-        transform: translateX(0%);
-    }
-
-    25% {
-        transform: translateX(-25%);
-    }
-
-    45% {
-        transform: translateX(-25%);
-    }
-
-    50% {
-        transform: translateX(-50%);
-    }
-
-    70% {
-        transform: translateX(-50%);
-    }
-
-    75% {
-        transform: translateX(-75%);
-    }
-
-    95% {
-        transform: translateX(-75%);
-    }
-
-    100% {
-        transform: translateX(-75%);
-    }
 }
 
 /* shop section headers */
@@ -1006,7 +693,8 @@ body {
     color: white;
 }
 
-/* map page  */
+/* ===== Map ===== */
+
 .header-map {
     width: 100%;
     height: 7vw;
@@ -1020,12 +708,7 @@ body {
     margin-top: 1.5vw;
 }
 
-.map-background {
-    height: 43vw;
-    width: 100%;
-}
-
-/* form page */
+/* ===== Form ===== */
 
 .form {
     position: relative;
@@ -1045,6 +728,9 @@ body {
     top: -0.2vw;
     right: -0.2vw;
     background-color: white;
+    width: 14vw;
+    height: 3.5vw;
+    margin-left: 41.5vw;
 }
 
 .date-field input {
@@ -1053,9 +739,11 @@ body {
     border: none;
     font-family: 'Courier New', monospace;
     font-weight: 700;
-    font-size: 1.1vw;
-    padding: 0.6vw 1vw;
     text-align: right;
+    width: 14vw;
+    height: 2.8vw;
+    font-size: 1.9vw;
+    padding: 1.3vw 0.8vw;
 }
 
 /* text inputs */
@@ -1097,19 +785,6 @@ body {
     font-size: 1.6vw;
     pointer-events: none;
     transition: opacity 0.2s ease;
-}
-
-.date-field {
-    width: 14vw;
-    height: 3.5vw;
-    margin-left: 41.5vw;
-}
-
-.date-field input {
-    width: 14vw;
-    height: 2.8vw;
-    font-size: 1.9vw;
-    padding: 1.3vw 0.8vw;
 }
 
 .placeholder:has(input[name='userName'])::before {
@@ -1210,5 +885,3 @@ body {
 .form button:hover {
     background-color: #cc0000;
 }
-
-/* cart */

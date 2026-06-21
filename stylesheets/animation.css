@@ -1,0 +1,63 @@
+/* Keyframes — shared by the running lines, soundwave bars and merch banner. */
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes soundwave-grow {
+    0% {
+        height: 10%;
+    }
+
+    80% {
+        height: var(--peak);
+    }
+
+    100% {
+        height: 10%;
+    }
+}
+
+@keyframes merchSlide {
+    0% {
+        transform: translateX(0%);
+    }
+
+    20% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    45% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    70% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-75%);
+    }
+
+    95% {
+        transform: translateX(-75%);
+    }
+
+    100% {
+        transform: translateX(-75%);
+    }
+}
