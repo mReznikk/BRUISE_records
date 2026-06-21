@@ -581,6 +581,69 @@
     color: #FF0000;
 }
 
+/* ===== Editorial ===== */
+
+.editorial-item {
+    display: flex;
+}
+
+.editorial-image {
+    position: relative;
+}
+
+.editorial-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.editorial-text {
+    flex: 1;
+    font-weight: 700;
+    font-size: 1.8vw;
+}
+
+.editorial-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    background: #FF0000;
+    color: white;
+    font-weight: 700;
+    font-size: 1.8vw;
+    padding: 0.3vw 0.6vw;
+    opacity: 0;
+}
+
+.editorial-image:hover .editorial-caption {
+    opacity: 1;
+}
+
+.editorial-item--1 .editorial-image {
+    flex: 0 0 73%;
+    height: 46vw;
+}
+
+.editorial-item--2 {
+    flex-direction: row-reverse;
+}
+
+.editorial-item--2 .editorial-image {
+    flex: 0 0 41%;
+    height: 47vw;
+}
+
+.editorial-item--3 .editorial-image {
+    flex: 0 0 100%;
+    height: 39vw;
+}
+
+.editorial-item--3 .editorial-text {
+    display: none;
+}
+
 /* ===== Shop (keyframes: merchSlide in animation.css) ===== */
 
 .merch-banner {
@@ -706,6 +769,54 @@
     max-width: 100%;
     margin-left: 1.6vw;
     margin-top: 1.5vw;
+}
+
+.map-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.map-img {
+    width: 100%;
+    display: block;
+}
+
+.region {
+    position: absolute;
+    width: 5.556%;
+    height: 12.78%;
+    cursor: pointer;
+    border: 2px solid #FF0000;
+    -webkit-backdrop-filter: brightness(16);
+    backdrop-filter: brightness(16);
+}
+
+.region-popup {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14vw;
+    background: white;
+    border: 1px solid black;
+    padding: 0.4vw;
+    display: none;
+    z-index: 10;
+}
+
+.region:hover .region-popup {
+    display: block;
+}
+
+.region-popup img {
+    width: 100%;
+    display: block;
+}
+
+.region-popup p {
+    margin: 0.3vw 0 0;
+    font-weight: 700;
+    font-size: 0.8vw;
 }
 
 /* ===== Form ===== */
