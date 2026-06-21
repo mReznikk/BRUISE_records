@@ -1,6 +1,4 @@
-/* Shop page: "Added" buy feedback + sliding cart drawer. */
-
-/* small confirmation shown next to a BUY button */
+/*---------------------------------added info--------------------------------- */
 .added-label {
   margin-top: 0.4vw;
   font-weight: 700;
@@ -8,16 +6,16 @@
   color: #FF0000;
 }
 
-/* cart drawer — slides in from the right (right -> left) */
+/*---------------------------------cart drawer--------------------------------- */
 .cart-panel {
+  overflow-y: auto;
   position: fixed;
   top: 0;
   right: 0;
   height: 100%;
   width: min(360px, 85vw);
   background: #fff;
-  border-left: 1px solid black;
-  box-shadow: -6px 0 40px rgba(0, 0, 0, 0.3);
+  border-left: 0.2vw solid black;
   transform: translateX(100%);
   transition: transform 0.3s ease;
   z-index: 1000;
@@ -25,7 +23,6 @@
   flex-direction: column;
   gap: 1.2vw;
   padding: 1.5vw;
-  overflow-y: auto;
 }
 
 .cart-panel.open {
@@ -33,12 +30,12 @@
 }
 
 .cart-panel__close {
-  align-self: flex-end;
-  background: none;
-  border: none;
-  font-size: 2vw;
-  line-height: 1;
-  cursor: pointer;
+   cursor: pointer;
+    padding-top: 2vw;
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 2vw;
 }
 
 .cart-panel__title {
@@ -52,17 +49,15 @@
   margin: 0;
   padding: 0;
 }
-
-/* one product per line: title on the left, quantity controls on the right */
+/*---------------------------------product per line--------------------------------- */
 .cart-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.6vw;
-  padding: 0.8vw 0;
-  border-bottom: 1px solid black;
-  font-weight: 700;
-  font-size: 1vw;
+    display: flex;
+    align-items: center;
+    gap: 0.6vw;
+    padding: 0.8vw 0;
+    border-bottom: 0.2vw solid black;
+    font-weight: 700;
+    font-size: 1vw;
 }
 
 .cart-item--empty {
@@ -103,7 +98,7 @@
   text-align: center;
 }
 
-/* checkout button — looks like the BUY buttons */
+/*---------------------------------checkout buttton--------------------------------- */
 #cart-checkout {
   background: white;
   color: black;
