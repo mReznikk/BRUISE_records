@@ -28,7 +28,7 @@
         </div>
         <div class="mainMenu-right">
             <a href="cart.html" class="mainMenu-cart-link">
-                <img src="./images/cart.svg" class="mainMenu-cart"> КОРЗИНА (0)
+                <img src="./images/cart.svg" class="mainMenu-cart"> КОРЗИНА (<span id="cart-count">0</span>)
             </a>
             <!-- <button class="lang-switcher" id="langSwitcher">
                 <span class="lang" data-lang="en">ENG</span>/<span class="lang" data-lang="ru">РУ</span>
@@ -236,6 +236,16 @@
             <button class="product-buy">КУПИТЬ</button>
         </div>
     </div>
+
+    <!-- Cart drawer — slides in from the right (styles in cart.css) -->
+    <aside class="cart-panel" aria-hidden="true">
+        <button class="cart-panel__close" type="button" aria-label="Закрыть">×</button>
+        <h2 class="cart-panel__title">КОРЗИНА</h2>
+        <ul class="cart-panel__items"></ul>
+        <button id="cart-checkout" type="button">ОФОРМИТЬ ЗАКАЗ</button>
+    </aside>
+
+    <script src="javascripts/cart.js"></script>
 </body>
 
 </html>
