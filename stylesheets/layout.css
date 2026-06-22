@@ -555,6 +555,7 @@
 }
 
 .artist-item {
+    position: relative;
     padding: 1.5vw;
     background: white;
     color: black;
@@ -569,8 +570,55 @@
     border-top: 1px solid black;
 }
 
-.artist-item:hover {
+.artist-item:hover,
+.artist-item:focus {
     color: #FF0000;
+}
+
+.artist-item::after {
+    content: "";
+    position: fixed;
+    top: 11.5vw;
+    right: 12vw;
+    z-index: 20;
+    width: 27vw;
+    height: 31.5vw;
+    background: black center / cover no-repeat;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.artist-item:hover::after,
+.artist-item:focus::after,
+.artist-item:active::after {
+    opacity: 1;
+}
+
+.artist-item:nth-child(1)::after { background-image: url("../images/cover1.jpg"); }
+.artist-item:nth-child(2)::after { background-image: url("../images/cover2.jpg"); }
+.artist-item:nth-child(3)::after { background-image: url("../images/cover3.jpg"); }
+.artist-item:nth-child(4)::after { background-image: url("../images/cover4.jpg"); }
+.artist-item:nth-child(5)::after { background-image: url("../images/cover5.jpg"); }
+.artist-item:nth-child(6)::after { background-image: url("../images/poster1.png"); }
+.artist-item:nth-child(7)::after { background-image: url("../images/photoexample.jpg"); }
+.artist-item:nth-child(8)::after { background-image: url("../images/producttest.png"); }
+.artist-item:nth-child(9)::after { background-image: url("../images/maketweb.png"); }
+.artist-item:nth-child(10)::after { background-image: url("../images/VINYL3.png"); }
+.artist-item:nth-child(11)::after { background-image: url("../images/character.png"); }
+.artist-item:nth-child(12)::after { background-image: url("../images/censoredlabel.jpg"); }
+.artist-item:nth-child(13)::after { background-image: url("../images/censoredlabel.png"); }
+.artist-item:nth-child(14)::after { background-image: url("../images/map2.png"); }
+.artist-item:nth-child(15)::after { background-image: url("../images/mapNew.png"); }
+
+@media (hover: none), (max-width: 700px) {
+    .artist-item::after {
+        position: absolute;
+        top: 100%;
+        right: 1.5vw;
+        width: min(64vw, 420px);
+        height: auto;
+        aspect-ratio: 27 / 31.5;
+    }
 }
 
 /*---------------------------------editorial page--------------------------------- */
