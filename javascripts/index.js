@@ -39,7 +39,7 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-// --- Poster stack reveal on scroll ---
+// Poster stack reveal on scroll
 (function () {
     let section = document.querySelector('.manifest-posters');
     let posters = document.querySelectorAll('.poster');

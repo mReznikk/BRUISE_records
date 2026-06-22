@@ -2,8 +2,6 @@
 // { "title": "...", "subtitle": "...", "image": "images/file.jpg" }.
 let DATA_URL = "./carousel.json";
 
-// Pixel inset around each cover edge where hover switching is ignored. This
-// prevents flicker when the cursor is exactly on an overlapping cover border.
 let EDGE_DEAD_ZONE = 10;
 
 // Delay before switching from one hovered cover to another. This smooths movement
