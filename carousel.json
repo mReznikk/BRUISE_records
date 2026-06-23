@@ -1,13 +1,13 @@
 {
   "albums": [
     {
-      "title": "The Downward Spiral",
-      "subtitle": "Nine Inch Nails",
+      "title": "1",
+      "subtitle": "artist 1",
       "image": "images/cover1.jpg"
     },
     {
-      "title": "Closer",
-      "subtitle": "Nine Inch Nails",
+      "title": "2",
+      "subtitle": "artist 2",
       "image": "images/cover2.jpg"
     },
     {
@@ -16,13 +16,13 @@
       "image": "images/VINYL3.png"
     },
     {
-      "title": "Pretty Hate Machine",
-      "subtitle": "Nine Inch Nails",
+      "title": "4",
+      "subtitle": "artist4",
       "image": "images/cover4.jpg"
     },
     {
-      "title": "The Fragile",
-      "subtitle": "Nine Inch Nails",
+      "title": "5",
+      "subtitle": "artist5",
       "image": "images/cover5.jpg"
     }
   ]

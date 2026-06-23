@@ -107,7 +107,7 @@
         if (!label || !label.classList.contains('added-label')) {
             label = document.createElement('div');
             label.className = 'added-label';
-            label.textContent = 'Added';
+            label.textContent = 'Добавлено';
             btn.insertAdjacentElement('afterend', label);
         }
         label.style.display = 'block';
