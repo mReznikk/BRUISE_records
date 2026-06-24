@@ -1,9 +1,9 @@
 {
   "albums": [
     {
-      "title": "1",
-      "subtitle": "artist 1",
-      "image": "images/cover1.jpg"
+      "title": "IRON OXIDE",
+      "subtitle": "RESOLUTION VIOLENCE",
+      "image": "for carousel/VINYL1.png"
     },
     {
       "title": "2",
@@ -29,6 +29,11 @@
       "title": "LAMB CHOP DEFINITIVE ED.",
       "subtitle": "RAM HEAD",
       "image": "for carousel/VINYL6.png"
+    },
+    {
+      "title": "COMPILATION NO.04",
+      "subtitle": "ISSUED BY BRUISE RECORDS",
+      "image": "for carousel/VINYL7.png"
     }
   ]
 }

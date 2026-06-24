@@ -112,10 +112,6 @@
         height: auto;
     }
 
-    .editorial-item--3 .editorial-text {
-        display: block;
-    }
-
     .footer-demo-inner {
         gap: 3vw;
     }
@@ -148,7 +144,7 @@
 
     .form {
         width: 100%;
-        min-height: 100vh;
+        min-height: 75vh;
         margin: 0;
         align-items: center;
         justify-content: center;
@@ -181,10 +177,6 @@
 
     .form button {
         width: 100%;
-    }
-
-    .page-header {
-        height: auto;
     }
 
     .product-list {
