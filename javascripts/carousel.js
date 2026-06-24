@@ -255,7 +255,6 @@ function handlePointerMove(event) {
 // Touch/click entry point. Touch starts drag tracking and also selects the touched
 // cover immediately; mouse clicks behave like instant hover selection.
 function handlePointerDown(event) {
-  if (isTouchPointer(event)) startTouchDrag(event);
   handlePointer(event, true);
 }
 

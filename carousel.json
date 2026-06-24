@@ -3,37 +3,37 @@
     {
       "title": "IRON OXIDE",
       "subtitle": "RESOLUTION VIOLENCE",
-      "image": "for carousel/VINYL1.png"
+      "image": "images/VINYL1.png"
     },
     {
       "title": "2",
       "subtitle": "artist 2",
-      "image": "images/cover2.jpg"
+      "image": "images/VINYL2.jpg"
     },
     {
       "title": "LAMB CHOP",
       "subtitle": "RAM HEAD",
-      "image": "for carousel/VINYL3.png"
+      "image": "images/VINYL3.png"
     },
     {
       "title": "4",
       "subtitle": "artist4",
-      "image": "images/cover4.jpg"
+      "image": "images/VINYL4.jpg"
     },
     {
       "title": "5",
       "subtitle": "artist5",
-      "image": "images/cover5.jpg"
+      "image": "images/VINYL5"
     },
     {
       "title": "LAMB CHOP DEFINITIVE ED.",
       "subtitle": "RAM HEAD",
-      "image": "for carousel/VINYL6.png"
+      "image": "images/VINYL6.png"
     },
     {
       "title": "COMPILATION NO.04",
       "subtitle": "ISSUED BY BRUISE RECORDS",
-      "image": "for carousel/VINYL7.png"
+      "image": "images/VINYL7.png"
     }
   ]
 }

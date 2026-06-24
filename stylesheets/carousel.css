@@ -15,8 +15,8 @@
 
 /* Pinned viewport layer. It sticks to the top while the user scrolls through the
    400vh section. perspective is the CSS pseudo-3D camera; child covers use
-   translate3d/rotate transforms inside this space. touch-action:none lets mobile
-   drag gestures be handled by script instead of native page scrolling. */
+   translate3d/rotate transforms inside this space. touch-action:pan-y lets native
+   vertical scrolling drive the carousel on touch (and the page scroll past it). */
 .cover-stage {
   position: sticky;
   top: 0;

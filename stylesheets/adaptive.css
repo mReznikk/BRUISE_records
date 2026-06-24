@@ -57,11 +57,13 @@
         flex-direction: column;
     }
 
+    @media (max-width: 1024px) {
     .header-BR {
         font-size: 21.5vw;
-        margin: 2vw 0 0;
-        padding: 0 1.5vw;
+        margin: 3vw 0vw 0;
+        padding: 0 0;
     }
+}
 
     .poster-stack {
         position: relative;
@@ -88,10 +90,10 @@
     .artist-item::after {
         position: absolute;
         top: 50%;
-        left: 50%;
-        right: auto;
-        transform: translate(-50%, -50%);
-        width: min(70vw, 460px);
+        left: auto;
+        right: 1.5vw;
+        transform: translateY(-50%);
+        width: min(45vw, 280px);
         height: auto;
         aspect-ratio: 27 / 31.5;
     }
@@ -140,6 +142,22 @@
 
     .countdown-timer {
         font-size: 6vw;
+    }
+
+    .footer {
+        height: auto;
+        font-size: 12px;
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 4px 14px;
+    }
+
+    .soundwave {
+        height: 18px;
+    }
+
+    .soundwave span {
+        width: 3px;
     }
 
     .form {
@@ -247,8 +265,13 @@
         flex-wrap: nowrap;
     }
 
+    .footer-col:not(.footer-col--image) {
+        width: auto;
+    }
+
     .footer-col--countdown {
         flex: 0 0 auto;
+        margin: 0;
     }
 
     .running-line {
