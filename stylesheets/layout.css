@@ -580,21 +580,21 @@
     opacity: 1;
 }
 
-.artist-item:nth-child(1)::after { background-image: url("../images/cover1.jpg"); }
-.artist-item:nth-child(2)::after { background-image: url("../images/cover2.jpg"); }
-.artist-item:nth-child(3)::after { background-image: url("../images/cover3.jpg"); }
-.artist-item:nth-child(4)::after { background-image: url("../images/cover4.jpg"); }
-.artist-item:nth-child(5)::after { background-image: url("../images/cover5.jpg"); }
-.artist-item:nth-child(6)::after { background-image: url("../images/poster1.png"); }
-.artist-item:nth-child(7)::after { background-image: url("../images/photoexample.jpg"); }
-.artist-item:nth-child(8)::after { background-image: url("../images/producttest.png"); }
-.artist-item:nth-child(9)::after { background-image: url("../images/maketweb.png"); }
-.artist-item:nth-child(10)::after { background-image: url("../images/VINYL3.png"); }
-.artist-item:nth-child(11)::after { background-image: url("../images/character.png"); }
-.artist-item:nth-child(12)::after { background-image: url("../images/censoredlabel.jpg"); }
-.artist-item:nth-child(13)::after { background-image: url("../images/censoredlabel.png"); }
-.artist-item:nth-child(14)::after { background-image: url("../images/map2.png"); }
-.artist-item:nth-child(15)::after { background-image: url("../images/mapNew.png"); }
+.artist-item:nth-child(1)::after { background-image: url("../images/a1.png"); }
+.artist-item:nth-child(2)::after { background-image: url("../images/a2.png"); }
+.artist-item:nth-child(3)::after { background-image: url("../images/a3.png"); }
+.artist-item:nth-child(4)::after { background-image: url("../images/a4.png"); }
+.artist-item:nth-child(5)::after { background-image: url("../images/a5.png"); }
+.artist-item:nth-child(6)::after { background-image: url("../images/a6.png"); }
+.artist-item:nth-child(7)::after { background-image: url("../images/a7.png"); }
+.artist-item:nth-child(8)::after { background-image: url("../images/a8.png"); }
+.artist-item:nth-child(9)::after { background-image: url("../images/a9.png"); }
+.artist-item:nth-child(10)::after { background-image: url("../images/a10.png"); }
+.artist-item:nth-child(11)::after { background-image: url("../images/a11.png"); }
+.artist-item:nth-child(12)::after { background-image: url("../images/a12.png"); }
+.artist-item:nth-child(13)::after { background-image: url("../images/a13.png"); }
+.artist-item:nth-child(14)::after { background-image: url("../images/a14.png"); }
+.artist-item:nth-child(15)::after { background-image: url("../images/a15.png"); }
 
 /*---------------------------------editorial page--------------------------------- */
 

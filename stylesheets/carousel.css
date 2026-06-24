@@ -101,15 +101,9 @@
   transform: translateZ(calc(var(--cover-depth) / 2));
 }
 
-/* Top-left metadata for the currently pulled-out cover. Text comes from
-   carousel.json title/subtitle fields. It is absolute inside the sticky stage so it
-   rides with the pinned carousel and clears once the section scrolls away. White on
-   black with a red title to match the BRUISE theme. */
 .cover-label {
   position: absolute;
   left: 24px;
-  /* Clear the site's fixed .mainMenu (position:fixed; height:2.5vw) so the title
-     line is not hidden behind the nav once the sticky stage pins to the top. */
   top: calc(2.5vw + 24px);
   z-index: 20;
   max-width: min(320px, calc(100vw - 48px));
@@ -130,8 +124,6 @@
   color: #FF0000;
 }
 
-/* Mobile sizing: covers become viewport-relative and labels are easier to read
-   when selected by touch. */
 @media (max-width: 760px) {
   .cover {
     width: 72vw;
@@ -139,6 +131,7 @@
 
   .cover-label {
     font-size: 20px;
+    margin-top: 8vw;
   }
 
   .cover-label b {

@@ -57,13 +57,11 @@
         flex-direction: column;
     }
 
-    @media (max-width: 1024px) {
     .header-BR {
         font-size: 21.5vw;
         margin: 3vw 0vw 0;
         padding: 0 0;
     }
-}
 
     .poster-stack {
         position: relative;
@@ -115,38 +113,69 @@
     }
 
     .footer-demo-inner {
-        gap: 3vw;
+        gap: 4vw;
+        padding: 4vw;
+    }
+
+    .footer-col:not(.footer-col--image) {
+        width: auto;
+    }
+
+    .footer-col--image {
+        width: 28vw;
+        height: auto;
+        overflow: visible;
+    }
+
+    .footer-col--image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-demo-inner > .footer-col:not(.footer-col--image) {
+        flex: 1 1 45%;
+        min-width: 45vw;
+    }
+
+    .footer-3-col {
+        flex: 1 0 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 4vw;
+        order: -1;
+    }
+
+    .footer-3-col .footer-col {
+        flex: 1 1 0;
+        min-width: 0;
     }
 
     .footer-col h4 {
-        font-size: 13px;
+        font-size: 3.2vw;
     }
 
     .footer-col p,
     .footer-col a {
-        font-size: 12px;
-    }
-
-    .footer-3-col {
-        flex-direction: column;
-        gap: 1.5vw;
+        font-size: 2.9vw;
+        overflow-wrap: anywhere;
     }
 
     .footer-col--countdown {
-        padding: 2.5vw 1.5vw;
+        margin: 0;
+        padding: 0;
     }
 
     .countdown-label {
-        font-size: 4vw;
+        font-size: 3.2vw;
     }
 
     .countdown-timer {
-        font-size: 6vw;
+        font-size: 5.4vw;
     }
 
     .footer {
         height: auto;
-        font-size: 12px;
+        font-size: 2.9vw;
         padding: 12px 16px;
         flex-wrap: wrap;
         gap: 4px 14px;
@@ -258,20 +287,6 @@
 
     .section-header h2 {
         font-size: 6vw;
-    }
-
-    .footer-demo-inner {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-
-    .footer-col:not(.footer-col--image) {
-        width: auto;
-    }
-
-    .footer-col--countdown {
-        flex: 0 0 auto;
-        margin: 0;
     }
 
     .running-line {
