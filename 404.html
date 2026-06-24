@@ -1,10 +1,139 @@
-<div class="scanlines"></div>
+<!DOCTYPE html>
+<html lang="ru">
 
-<div class="intro-wrap">
-	<div class="noise"></div>
-	<div class="noise noise-moving"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRUISE.records - 404</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/cart.css" />
+    <script defer src="javascripts/scripts.js"></script>
+    <script defer src="javascripts/cart.js"></script>
+    <style>
+        .not-found {
+            min-height: calc(100vh - 7.1vw);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5vw;
+            padding: 6vw 1.7vw;
+            text-align: center;
+            background: white;
+        }
 
-	<div class="play" data-splitting>PLAY</div>
-	<div class="time">--:--</div>
-	<div class="recordSpeed">SLP 0:00:00</div>
-</div>
+        .not-found h1 {
+            margin: 0;
+            color: black;
+            font-size: 14vw;
+            font-weight: 700;
+            line-height: 0.8;
+        }
+
+        .not-found p {
+            margin: 0;
+            color: black;
+            font-size: 2vw;
+            font-weight: 700;
+        }
+
+        .not-found a {
+            display: inline-block;
+            color: black;
+            border: 1px solid black;
+            padding: 0.6vw 1.6vw;
+            font-size: 0.9vw;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 0.2s ease, color 0.2s ease;
+        }
+
+        .not-found a:hover {
+            background: black;
+            color: white;
+        }
+
+        @media (max-width: 1024px) {
+            .not-found {
+                min-height: calc(100vh - 56px);
+                gap: 24px;
+                padding: 96px 16px 48px;
+            }
+
+            .not-found h1 {
+                font-size: 28vw;
+            }
+
+            .not-found p {
+                font-size: 6vw;
+            }
+
+            .not-found a {
+                padding: 12px 24px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="burger"></div>
+
+    <nav class="mainMenu">
+        <img src="./images/BRUISElogo.png" class="mainMenu-logo">
+        <div class="mainMenu-links">
+            <a href="index.html">ГЛАВНАЯ</a>
+            <a href="editorial.html">ЭДИТОРИАЛ</a>
+            <a href="artists.html">АРТИСТЫ</a>
+            <a href="shop.html">МАГАЗИН</a>
+            <a href="map.html">КАРТА</a>
+            <a href="join.html">ПРИСОЕДИНИТЬСЯ</a>
+        </div>
+        <div class="mainMenu-right">
+            <a href="cart.html" class="mainMenu-cart-link">
+                <img src="./images/cart.svg" class="mainMenu-cart"> КОРЗИНА (0)
+            </a>
+        </div>
+    </nav>
+
+    <div class="running-line">
+        <div class="running-text">
+            BRUISE RECORDS / BR-001 /POST-PUNK / EXPERIMENTAL / EBM / INDUSTRIAL / NOISE / EUROPE GROUP TOUR — ГРУППОВОЙ
+            ТУР ПО ЕВРОПЕ — ДАТЫ, МЕСТА ПРОВЕДЕНИЯ И ИНФОРМАЦИЯ БУДУТ ОБЪЯВЛЕНЫ ПОЗЖЕ
+        </div>
+        <div class="running-text">
+            BRUISE RECORDS / BR-001 /POST-PUNK / EXPERIMENTAL / EBM / INDUSTRIAL / NOISE / EUROPE GROUP TOUR — ГРУППОВОЙ
+            ТУР ПО ЕВРОПЕ — ДАТЫ, МЕСТА ПРОВЕДЕНИЯ И ИНФОРМАЦИЯ БУДУТ ОБЪЯВЛЕНЫ ПОЗЖЕ
+        </div>
+    </div>
+
+    <main class="not-found">
+        <h1>404</h1>
+        <p>ОШИБКА</p>
+        <a href="index.html">Вернуться на главную</a>
+    </main>
+
+    <div class="footer">
+        <span class="footer-left">Б25ДЗ09</span>
+        <span class="footer-right">@BRUISE RECORDS SYSTEM</span>
+        <div class="soundwave">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</body>
+
+</html>
