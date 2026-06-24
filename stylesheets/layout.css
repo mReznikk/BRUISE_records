@@ -154,31 +154,6 @@
     width: auto;
 }
 
-/* Language switcher
-.lang-switcher {
-    background: none;
-    border: none;
-    color: white;
-    font-family: inherit;
-    font-size: 1vw;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 0;
-    white-space: nowrap;
-}
-
-.lang-switcher .lang {
-    transition: color 0.2s ease;
-}
-
-.lang-switcher .lang.active-lang {
-    color: #FF0000;
-}
-
-.lang-switcher:hover {
-    opacity: 0.8;
-} */
-
 /*---------------------------------crunning lines--------------------------------- */
 
 
