@@ -33,7 +33,7 @@ function updateCountdown() {
     let s = Math.floor((diff / 1000) % 60);
 
     document.getElementById('countdown').textContent =
-        `${d}D ${String(h).padStart(2, '0')}H ${String(m).padStart(2, '0')}M ${String(s).padStart(2, '0')}S`;
+        `${d}Д ${String(h).padStart(2, '0')}Д ${String(m).padStart(2, '0')}М ${String(s).padStart(2, '0')}С`;
 }
 
 setInterval(updateCountdown, 1000);

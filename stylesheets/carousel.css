@@ -25,7 +25,7 @@
   height: 100vh;
   overflow: hidden;
   perspective: 1150px;
-  touch-action: none;
+  touch-action: pan-y;
 }
 
 /* Transform root for the whole row. This lets scroll/touch move the complete

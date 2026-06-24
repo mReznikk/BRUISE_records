@@ -47,24 +47,103 @@
     }
 
     .video-background {
-        height: 100vh;
+        height: 60vw;
     }
 
     .manifest-posters {
+        min-height: 100vh;
         height: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+
+    .header-BR {
+        font-size: 21.5vw;
+        margin: 2vw 0 0;
+        padding: 0 1.5vw;
     }
 
     .poster-stack {
         position: relative;
         top: auto;
         right: auto;
+        width: 62vw;
+        height: 86vw;
+        margin: auto;
+    }
+
+    .poster {
+        width: 62vw;
+        height: 86vw;
     }
 
     .artist-item {
         font-size: 4vw;
+    }
+
+    .artists-list {
+        overflow: hidden;
+    }
+
+    .artist-item::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%);
+        width: min(70vw, 460px);
+        height: auto;
+        aspect-ratio: 27 / 31.5;
+    }
+
+    .editorial-item {
+        flex-direction: column;
+    }
+
+    .editorial-item--1 .editorial-image,
+    .editorial-item--2 .editorial-image,
+    .editorial-item--3 .editorial-image {
+        flex: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .editorial-item img {
+        height: auto;
+    }
+
+    .editorial-item--3 .editorial-text {
+        display: block;
+    }
+
+    .footer-demo-inner {
+        gap: 3vw;
+    }
+
+    .footer-col h4 {
+        font-size: 13px;
+    }
+
+    .footer-col p,
+    .footer-col a {
+        font-size: 12px;
+    }
+
+    .footer-3-col {
+        flex-direction: column;
+        gap: 1.5vw;
+    }
+
+    .footer-col--countdown {
+        padding: 2.5vw 1.5vw;
+    }
+
+    .countdown-label {
+        font-size: 4vw;
+    }
+
+    .countdown-timer {
+        font-size: 6vw;
     }
 
     .form {
@@ -72,6 +151,7 @@
         min-height: 100vh;
         margin: 0;
         align-items: center;
+        justify-content: center;
     }
 
     .input-group,
@@ -91,6 +171,16 @@
     .date-field input {
         width: auto;
         height: auto;
+    }
+
+    .form-bottom {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 3vw;
+    }
+
+    .form button {
+        width: 100%;
     }
 
     .page-header {
@@ -158,6 +248,15 @@
 
     .section-header h2 {
         font-size: 6vw;
+    }
+
+    .footer-demo-inner {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .footer-col--countdown {
+        flex: 0 0 auto;
     }
 
     .running-line {

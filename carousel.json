@@ -13,7 +13,7 @@
     {
       "title": "LAMB CHOP",
       "subtitle": "RAM HEAD",
-      "image": "images/VINYL3.png"
+      "image": "for carousel/VINYL3.png"
     },
     {
       "title": "4",
@@ -24,6 +24,11 @@
       "title": "5",
       "subtitle": "artist5",
       "image": "images/cover5.jpg"
+    },
+    {
+      "title": "LAMB CHOP DEFINITIVE ED.",
+      "subtitle": "RAM HEAD",
+      "image": "for carousel/VINYL6.png"
     }
   ]
 }
