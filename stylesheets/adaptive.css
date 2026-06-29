@@ -254,6 +254,15 @@
     .form button {
         width: 100%;
     }
+    .flipbook-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    padding: 4vw 1.5vw;
+    background: #fff;
+}
 
     .product-card-flipbook {
         display: flex;
