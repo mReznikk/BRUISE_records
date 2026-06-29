@@ -18,7 +18,7 @@ function showAgreement() {
 document.addEventListener('DOMContentLoaded', showAgreement);
 
 function updateCountdown() {
-    let target = new Date('2026-07-01T00:00:00'); // change to your release date
+    let target = new Date('2026-08-01T00:00:00'); // change to your release date
     let now = new Date();
     let diff = target - now;
 

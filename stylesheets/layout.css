@@ -715,7 +715,7 @@
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 1.7vw 0.1vw;
+    padding: 0vw 1.7vw 4.1vw 1vw;
     background: white;
 }
 

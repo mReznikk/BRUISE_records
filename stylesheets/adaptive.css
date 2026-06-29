@@ -47,11 +47,11 @@
     }
 
     .video-background {
-        height: 60vw;
+        height: 136vw;
     }
 
-    .manifest-posters {
-        min-height: 100vh;
+       .manifest-posters {
+        min-height: 83vh;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -62,6 +62,13 @@
         margin: 3vw 0vw 0;
         padding: 0 0;
     }
+
+    .about-label-text {
+    font-size: 2vw;
+    margin-top: 2vw;
+    margin-left: 1.5vw;
+    text-decoration: none;
+}
 
     .poster-stack {
         position: relative;
@@ -99,7 +106,23 @@
     .editorial-item {
         flex-direction: column;
     }
+    .editorial-text {
+    font-size: 4.5vw;
+    padding: 1vw 1.5vw;
+}
 
+.editorial-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    background: #FF0000;
+    color: white;
+    font-weight: 700;
+    font-size: 4.8vw;
+    padding: 0.3vw 1.5vw;
+    opacity: 0;
+}
     .editorial-item--1 .editorial-image,
     .editorial-item--2 .editorial-image,
     .editorial-item--3 .editorial-image {
@@ -127,9 +150,10 @@
         overflow: visible;
     }
 
-    .footer-col--image img {
-        width: 100%;
-        height: auto;
+       .footer-col--image img {
+        width: 25vw;
+        padding-left: 4vw;
+        height: 34vw;
     }
 
     .footer-demo-inner > .footer-col:not(.footer-col--image) {
