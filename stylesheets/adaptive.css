@@ -47,11 +47,12 @@
         height: 4vw;
         font-size: 3vw;
     }
+
     .video-background {
         height: 136vw;
     }
 
-       .manifest-posters {
+    .manifest-posters {
         min-height: 83vh;
         height: auto;
         display: flex;
@@ -64,7 +65,7 @@
         padding: 0 0;
     }
 
-        .about-label-text {
+    .about-label-text {
         font-size: 2.8vw;
         margin-top: 2vw;
         margin-left: 1.5vw;
@@ -108,23 +109,25 @@
     .editorial-item {
         flex-direction: column;
     }
-    .editorial-text {
-    font-size: 4.5vw;
-    padding: 1vw 1.5vw;
-}
 
-.editorial-caption {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 40px;
-    background: #FF0000;
-    color: white;
-    font-weight: 700;
-    font-size: 4.8vw;
-    padding: 0.3vw 1.5vw;
-    opacity: 0;
-}
+    .editorial-text {
+        font-size: 4.5vw;
+        padding: 1vw 1.5vw;
+    }
+
+    .editorial-caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 40px;
+        background: #FF0000;
+        color: white;
+        font-weight: 700;
+        font-size: 4.8vw;
+        padding: 0.3vw 1.5vw;
+        opacity: 0;
+    }
+
     .editorial-item--1 .editorial-image,
     .editorial-item--2 .editorial-image,
     .editorial-item--3 .editorial-image {
@@ -152,13 +155,13 @@
         overflow: visible;
     }
 
-       .footer-col--image img {
+    .footer-col--image img {
         width: 25vw;
         padding-left: 4vw;
         height: 34vw;
     }
 
-    .footer-demo-inner > .footer-col:not(.footer-col--image) {
+    .footer-demo-inner>.footer-col:not(.footer-col--image) {
         flex: 1 1 45%;
         min-width: 45vw;
     }
@@ -252,6 +255,15 @@
         width: 100%;
     }
 
+    .product-card-flipbook {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4vw;
+        gap: 0.8vw;
+        text-align: center;
+    }
+
     .product-list {
         justify-content: center;
         gap: 2vw;
@@ -296,6 +308,15 @@
 @media (max-width: 600px) {
     .mainMenu a {
         font-size: 16px;
+    }
+
+    .product-card-flipbook {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 4vw;
+        gap: 0.8vw;
+        text-align: center;
     }
 
     .mainMenu-cart-link {
