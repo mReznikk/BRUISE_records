@@ -13,6 +13,7 @@
   aspect-ratio: 60 / 42.6;   /* preserves the original 720:511 proportions */
   height: auto;
   box-shadow: 0 0 100px rgba(0, 0, 0, .3);
+  overflow: hidden;
 }
 
 .book {
